@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics</title>
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Basics Overview</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Control Flow</h2>
+        <a href="controlflow.html"><button>Go to Control Flow</button></a>
+      </section>
+      <section id="javascript-operators">
+        <h2>JavaScript Operators</h2>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <pre><code>
+ let name = "John"; // String Literal
+ let Age = 31; // Number Literal
+ let isCool = true; // Boolean Literal
+ let firstName = undefined; // Undefined
+ let selectedColor = Null; // Null
+
+let person = {
+  name: "John",
+  age: 31,
+}; // Object Literal
+
+// Dot Notation (Best Practice)
+person.name = "John";
+
+// Bracket Notation
+let selection = "name";
+person[selection] = "Mary";
+
+console.log(person.name);
+
+let selectedColors = ["red", "blue"]; // Array Literal
+selectedColors[2] = 1; // Add to Array
+console.log(selectedColors.length); // Length of Array
+
+// Perform a task
+function greet(name, lastName) {
+  // name is a parameter
+
+  console.log("Hello " + name + " " + lastName);
+}
+
+greet("John", "Smith"); // John is an argument
+
+// Calculate a value
+function square(number) {
+  return number * number;
+}
+
+console.log(square(2));
+      </code></pre>
+      </section>
+
+      <section id="assignment-operators">
+        <h2>Assignment Operators</h2>
+        <p>Assignment operators are used to assign values to variables.</p>
+        <pre><code>
+// Example of Assignment Operators
+let x = 10;
+x += 5; // x = x + 5
+console.log(x); // 15
+      </code></pre>
+      </section>
+
+      <section id="arithmetic-operators">
+        <h2>Arithmetic Operators</h2>
+        <p>Arithmetic operators are used to perform arithmetic on numbers.</p>
+        <pre><code>
+// Example of Arithmetic Operators
+let a = 5;
+let b = 2;
+let sum = a + b;
+console.log(sum); // 7
+      </code></pre>
+      </section>
+
+      <section id="comparison-operators">
+        <h2>Comparison Operators</h2>
+        <p>Comparison operators are used to compare two values.</p>
+        <pre><code>
+// Example of Comparison Operators
+console.log(5 > 3); // true
+console.log(5 < 3); // false
+      </code></pre>
+      </section>
+
+      <section id="equality-operators">
+        <h2>Equality Operators</h2>
+        <p>Equality operators are used to compare two values for equality.</p>
+        <pre><code>
+// Example of Equality Operators
+console.log(1 == '1'); // true
+console.log(1 === '1'); // false
+      </code></pre>
+      </section>
+
+      <section id="ternary-operators">
+        <h2>Ternary Operators</h2>
+        <p>
+          Ternary operators are used to assign a value based on a condition.
+        </p>
+        <pre><code>
+// Example of Ternary Operators
+let age = 18;
+let canVote = (age >= 18) ? 'Yes' : 'No';
+console.log(canVote); // Yes
+      </code></pre>
+      </section>
+
+      <section id="logical-operators">
+        <h2>Logical Operators</h2>
+        <p>Logical operators are used to combine multiple conditions.</p>
+        <pre><code>
+// Example of Logical Operators
+console.log(true && false); // false
+console.log(true || false); // true
+console.log(!true); // false
+      </code></pre>
+      </section>
+
+      <section id="bitwise-operators">
+        <h2>Bitwise Operators</h2>
+        <p>Bitwise operators are used to perform bit-level operations.</p>
+        <pre><code>
+// Example of Bitwise Operators
+console.log(5 & 1); // 1
+console.log(5 | 1); // 5
+console.log(~5); // -6
+console.log(5 ^ 1); // 4
+console.log(5 << 1); // 10
+console.log(5 >> 1); // 2
+      </code></pre>
+      </section>
+
+      <section id="operator-precedence">
+        <h2>Operator Precedence</h2>
+        <p>
+          Operator precedence determines the order in which operators are
+          evaluated.
+        </p>
+        <pre><code>
+// Example of Operator Precedence
+let result = 3 + 4 * 5; // 23
+console.log(result);
+result = (3 + 4) * 5; // 35
+console.log(result);
+      </code></pre>
+      </section>
+    </main>
+  </body>
+</html>
